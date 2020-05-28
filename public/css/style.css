@@ -1,0 +1,377 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@font-face {
+    font-family: Graphik;
+    src: url("../webfont/graphik/Graphik-Regular.eot")/* EOT file for IE */
+}
+
+@font-face {
+    font-family: Graphik;
+    src: url("../webfont/graphik/Graphik-Regular.ttf")/* TTF file for CSS3 browsers */
+}
+
+body {
+    /* font-family: 'Open-sans', sans-serif; */
+    font-family: Graphik, 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    color: #000;
+}
+
+.container {
+    margin: auto;
+}
+
+
+
+
+/* HEADER */
+
+#top-header {
+    background: #3baf5a;
+    color: white;
+    padding: 10px 0;
+}
+
+#menu-div {}
+
+
+/* NAVBAR */
+
+.navbar {
+    background: #0da337;
+    z-index: 1;
+    height: 60px;
+}
+
+.navbar a {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a img {
+    width: 100px;
+}
+
+.nav-item {
+    align-self: center;
+}
+
+.navbar .login {
+    padding: 0px 8px;
+    margin-right: 6px
+}
+
+.navbar .signup {
+    padding: 0px 8px;
+    background-color: white;
+    color: #0da337;
+}
+
+
+/* SHOWCASE */
+
+#showcase {
+    margin-top: 60px;
+    border-bottom: 4px solid #0da337;
+}
+
+#showcase .showcase-lt-content {
+    background: url('../img/agro.png') no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: #fff;
+    line-height: 30px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+#showcase .btn-sponsor {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+    background-color: #0da337;
+    padding: 10px 50px;
+    margin-top: 20px;
+}
+
+#showcase .btn-sponsor:hover {
+    background-color: #297e40;
+    transform: scale(1.05);
+}
+
+#showcase .showcase-lt-content .caption {
+    color: #0da337;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom:10px;
+}
+
+#showcase .showcase-lt-content .caption-1 {
+    color:#333;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom:30px;
+}
+
+
+#showcase .showcase-lt-content p {
+    color: black;
+    margin: 0;
+    font-style: italic;
+}
+
+#showcase .showcase-rt-content {
+    background: #fff;
+    height: 400px;
+}
+
+.showcase-rt-content .box-feature {
+    height: auto;
+    border: 4px solid #fcfcfc;
+    margin-top: 15px;
+    background-color: #fcfcfc;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px #e9e9e9;
+}
+
+#showcase .showcase-rt-content .box-feature .caption {
+    color: #000;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#showcase .showcase-rt-content .box-feature p {
+    color: #000;
+    margin: 0;
+    font-style: italic;
+}
+
+#jumbotron {
+    margin-top: 20px;
+}
+
+.jumbotron-inner {
+    margin: 0;
+}
+
+.jumbotron-inner .caption {
+    color: 0;
+    color: #004040;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 50px auto 30px auto;
+    display: inline-block;
+}
+
+.section-title {
+    display: inline-block;
+    font-size: 30px;
+    margin: 100px auto 30px auto;
+    color: #004040;
+    font-weight: bold;
+}
+
+.jumbotron-inner .text {
+    margin: 0;
+}
+
+
+/* FOOTER */
+
+
+/* MEDIA QUERIES */
+
+@media(max-width:768px) {
+    #showcase .showcase-lt-content {
+        height: 300px;
+    }
+    #showcase .showcase-lt-content .caption, #showcase .showcase-lt-content .caption-1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+}
+
+
+#benefits .box-feature {
+    height: auto;
+    /* border: 4px solid #fcfcfc; */
+    margin-top: 15px;
+    border-radius: 5px;
+    /* box-shadow: 1px 2px 3px #e9e9e9; */
+}
+
+#benefits .box-feature .caption {
+    color: #000;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#benefits .box-feature p {
+    color: #000;
+    margin: 0;
+    font-style: italic;
+}
+
+.explore-title {
+    display: block;
+    font-size: 30px;
+    margin: 50px;
+    color: #004040;
+    font-weight: bold;
+}
+
+.explore-box {
+    border-radius: 10px;
+    border: 1px solid #e6e6e6;
+    box-shadow: 1px 5px 5px #e6e6e6;
+    padding: 15px
+}
+
+.explore-box a {
+    text-decoration: none;
+}
+
+.explore-box a * {
+    text-decoration: none;
+    color: #333;
+}
+
+.explore-box .explore-header {
+    background: url('../img/farmproduce.jpg') no-repeat;
+    background-size: cover;
+    min-height: 150px;
+}
+
+.explore-box .explore-body {
+    line-height: 1.5em;
+}
+
+.explore-status-success {
+    background-color: #3baf5a;
+    padding: 4px 8px;
+    color: white !important;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.explore-status-danger {
+    background-color: #a8000d;
+    padding: 4px 8px;
+    color: white !important;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.explore-box .farm-type {
+    font-size: 18px;
+}
+
+.explore-box .farm-place {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.explore-box .item-left {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.explore-box .roi {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.btn-see-more {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+    background-color: #3baf5a;
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.btn-see-more:hover {
+    background-color: #297e40;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.clearfix {
+    border-bottom: 1px solid #e5e5e5;
+    margin: 50px 0;
+}
+
+
+.jumbotron-inner .caption:after, .section-title:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 50%; /* Change this to whatever width you want. */
+    padding-top: 15px; /* This creates some space between the element and the border. */
+    border-bottom: 3px solid #004040; /* This creates the border. Replace black with whatever color you want. */
+}
+
+
+#footer{
+    background: #0da337;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px
+}
+
+#footer a{
+    color: white !important;
+    font-size: 13px
+}
+
+
+.form-signin {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
